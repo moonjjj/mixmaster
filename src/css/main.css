@@ -37,17 +37,17 @@ a{
     position: relative;
 }
 .mix-img{
-    width:85%;
+    width:97%;
     margin:40px auto;
 }
-.mix-title{
+.mix-title{    
     position: absolute;
-    left: 20%;
-    top: 35%;
+    left: 16%;
+    top: 22%;
     color: #fff;
     background-color: #c4c4c4;
-    width: 60%;
-    height: 85px;
+    width: 68.5%;
+    height: 128px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -60,12 +60,12 @@ a{
 .input-container{
     position: absolute;
     display: flex;
-    top: 53%;
-    left: 6%;
+    top: 50%;
+    left: 5.5%;
 }
 .info-container{
     position: absolute;
-    top: 75.8%;
+    top: 74.8%;
     width: 303px;
     display: flex;
     justify-content: center;
