@@ -29,3 +29,90 @@ a{
 }
 
 /* 컨텐츠영역 */
+.con-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+}
+.mix-img{
+    width:85%;
+    margin:40px auto;
+}
+.mix-title{
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    color: #fff;
+    background-color: #c4c4c4;
+    width: 60%;
+    height: 85px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 33px;
+    font-weight: 700;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+.input-container{
+    position: absolute;
+    display: flex;
+    top: 53%;
+    left: 6%;
+}
+.info-container{
+    position: absolute;
+    top: 75.8%;
+    width: 303px;
+    display: flex;
+    justify-content: center;
+    background: #d2d2d2;
+    padding: 3px 10px;
+}
+.lvl-input {
+    font-size: 17px;
+    margin: 5px 10px;
+    padding: 9px;
+    border-radius: 10px;
+}
+.main-core{
+    width: 40%;
+    margin-right: 3%;
+    background-color: #d2d2d2;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+}
+.sub-core{
+    width: 40%;
+    margin-right: 3%;
+    background-color: #d2d2d2;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+}
+.core-img1,.core-img2{
+    width:50px;
+    height:50px;
+}
+.submit-btn {
+    position: absolute;
+    width: 119px;
+    height: 30px;
+    bottom: 10%;
+    padding: 6px;
+    left: 46%;
+    border-radius: 10px;
+    cursor: pointer;
+}
