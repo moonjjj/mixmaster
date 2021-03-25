@@ -1,0 +1,36 @@
+body{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+/* 헤더영역 */
+.header-section{
+    width:100%;
+    height:70px;
+    background-color: rgba(47, 138, 231, 1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 0 15px black;
+}
+.header-logo{
+    width:70px;
+    height:70px;
+}
+.inner{
+    margin:0 auto;
+    width:500px;
+}
+.nav-section{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#fff;
+}
+.nav-section a{
+    color:#fff;
+}

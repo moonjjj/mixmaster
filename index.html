@@ -13,8 +13,8 @@
         <div class="inner">
             <div class="nav-section">
                 <img src="src/img/mix-logo.png" alt="logo" class="header-logo">
-                <a href="#">믹스</a>
-                <a href="#">플레이팁</a>
+                <a href="index.html"><strong>믹스</strong></a>
+                <a href="index1.html">플레이팁</a>
                 <a href="#">관련사이트</a>
             </div>
         </div>
@@ -58,6 +58,7 @@
                 <div class="info-container">
                     <span style="font-size:16px;">이 페이지에서 사용된 공식은 기존 유저들 사이에서 통용되는 공식보단 정확하지만 약간의 반례는 존재합니다.</span>
                 </div>
+                <a class="re-start" onclick="reStart();"></a>
             </div>
 
         </div>
@@ -81,6 +82,12 @@
     <script>
         $(document).ready(function(){
             console.log("ready");
+
+            $('.lvl-input').keydown(function(key){
+                if(window.event.keyCode == 13){
+                    $('.submit-btn').click();
+                }
+            });
         });
 
         function mixLevel(){
@@ -93,8 +100,11 @@
             }
             console.log(queryString.mainNow);
             if(isNaN(queryString.mainNow) || isNaN(queryString.mainMax) || isNaN(queryString.subNow) || isNaN(queryString.subMax)){
-                alert("코어 레벨을 입력해주세요.");
+                alert("🙅‍♂️코어 레벨을 입력해주세요.🙅‍♂️");
                 return 0;
+            }
+            if(queryString.mainNow>queryString.mainMax || queryString.subNow>queryString.subMax){
+                alert("🙅‍♂️코어의 최대 레벨을 확인해주세요.🙅‍♂️");
             }
             var formular = 0;
             var plusthat = 0;
@@ -113,13 +123,11 @@
                 }
             });
         }
-        function enterkey(){
-            console.log("hi");
-            if(window.event.keyCode == 13){
-                $('.submit-btn').click();
-            }
-        }
+        function reStart(){
+            $('.con1-section').css("display","block");
+            $('.con11-section').css("display","none");
 
+        }
     </script>
 </body>
 </html>
