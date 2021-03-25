@@ -128,10 +128,9 @@ a{
 }
 .submit-btn {
     position: absolute;
-    width: 140px;
-    height: 30px;
-    bottom: -155%;
-    padding: 6px;
+    width: 148px;
+    height: 45px;
+    bottom: -128%;
     left: 40%;
     border-radius: 10px;
     cursor: pointer;
