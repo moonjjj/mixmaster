@@ -23,32 +23,48 @@
 
     <div class="content-section">
         <div class="inner">
-            <div class="con-section">
+            <div class="con1-section">
                 <img src="src/img/mix-img.png" alt="mix-img" class="mix-img">
                 <span class="mix-title">믹스레벨계산기 🧐 </span>
-                <div class="input-container">
-                    <div class="main-core">
-                        <div class="intro-container1">
-                            <img src="src/img/draco.gif" alt="core-img1" class="core-img1">
-                            <span>코어1</span>
+                    <form id="mix-lvl" class="input-container" method="POST">
+                        <div class="main-core">
+                            <div class="intro-container1">
+                                <img src="src/img/draco.gif" alt="core-img1" class="core-img1">
+                                <span style="color:#fff;font-size:25px;">코어 1 </span>
+                            </div>
+                            <input type="text" placeholder="현재레벨입력" class="lvl-input" id="main-now" name="nowmain" required>
+                            <input type="text" placeholder="최대레벨입력" class="lvl-input" id="main-max" name="maxmain" required>
                         </div>
-                        <input type="text" placeholder="현재레벨입력" class="lvl-input" id="main-now" required>
-                        <input type="text" placeholder="최대레벨입력" class="lvl-input" id="main-max" required>
-                    </div>
-                    <div class="sub-core">
-                        <div class="intro-container2">
-                            <img src="src/img/devilco.gif" alt="core-img2" class="core-img2">
-                            <span>코어2</span>
+                        <div class="sub-core">
+                            <div class="intro-container2">
+                                <img src="src/img/devilco.gif" alt="core-img2" class="core-img2">
+                                <span style="color:#fff;font-size:25px;">코어 2 </span>
+                            </div>
+                            <input type="text" placeholder="현재레벨입력" class="lvl-input" id="sub-now" name="nowsub" required>
+                            <input type="text" placeholder="최대레벨입력" class="lvl-input" id="sub-max" name="maxsub" required>
                         </div>
-                        <input type="text" placeholder="현재레벨입력" class="lvl-input" id="sub-now" required>
-                        <input type="text" placeholder="최대레벨입력" class="lvl-input" id="sub-max" required>
-                    </div>
-                </div>
+                        <a class="submit-btn" onclick="mixLevel();" onkeydown="enterkey();"></a>
+                    </form>
                 <div class="info-container">
                     <span>믹스된 코어의 레벨은 <strong>최대레벨의 영향</strong>을 받습니다. (진화의 성수를 바른 경우 바뀐 최대 레벨을 입력해주세요.)</span>
                 </div>
-                <a class="submit-btn"></a>
             </div>
+
+            <div class="con11-section" style="display:none;">
+                <img src="src/img/mix-success.png" alt="mix-img" class="mix-img">
+                <span class="mix-title">믹스레벨계산기 🧐 </span>
+                <img src="src/img/metaco.gif" alt="metaco" class="success-img">
+                <span class="success-lvl">예상레벨<input type="text" disabled id="success-lvl"></span>
+                <div class="info-container">
+                    <span style="font-size:16px;">이 페이지에서 사용된 공식은 기존 유저들 사이에서 통용되는 공식보단 정확하지만 약간의 반례는 존재합니다.</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="con2-section">
+            <span class="con2-title">믹스공식👇👇</span>
+    
+            <iframe src="https://monster.playmixmaster.com/" frameborder="3" class="mix-iframe"></iframe>
         </div>
     </div>
 
@@ -61,6 +77,49 @@
     <!-- 슬릭을 위한 jquery&slick! -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="src/js/main.js"></script>
+    <!-- <script src="src/js/main.js"></script> -->
+    <script>
+        $(document).ready(function(){
+            console.log("ready");
+        });
+
+        function mixLevel(){
+            // var queryString = $('#mix-lvl').serialize();
+            var queryString = {
+                mainNow:parseInt($('#main-now').val()),
+                mainMax:parseInt($('#main-max').val()),
+                subNow:parseInt($('#sub-now').val()),
+                subMax:parseInt($('#sub-max').val())
+            }
+            console.log(queryString.mainNow);
+            if(isNaN(queryString.mainNow) || isNaN(queryString.mainMax) || isNaN(queryString.subNow) || isNaN(queryString.subMax)){
+                alert("코어 레벨을 입력해주세요.");
+                return 0;
+            }
+            var formular = 0;
+            var plusthat = 0;
+
+            $.ajax({
+                url: 'index.html',
+                type: 'get',
+                data: queryString,
+                success: function (data) {
+                    $('.con1-section').css("display","none");
+                    formular1 = Math.floor((queryString.mainNow+queryString.subNow) * 0.5); 
+                    formular2 = Math.floor((queryString.mainNow + queryString.subNow) / ((queryString.mainMax + queryString.subMax) * 1/10));
+                    
+                    $('#success-lvl').val(formular1+formular2);
+                    $('.con11-section').css("display","block");
+                }
+            });
+        }
+        function enterkey(){
+            console.log("hi");
+            if(window.event.keyCode == 13){
+                $('.submit-btn').click();
+            }
+        }
+
+    </script>
 </body>
 </html>
