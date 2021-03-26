@@ -99,7 +99,7 @@
                 subMax:parseInt($('#sub-max').val())
             }
             console.log(queryString.mainNow);
-            if(isNaN(queryString.mainNow) || isNaN(queryString.mainMax) || isNaN(queryString.subNow) || isNaN(queryString.subMax)){
+            if(isNaN(queryString.mainNow) || isNaN(queryString.mainMax) || isNaN(queryString.subNow) || isNaN(queryString.subMax) || queryString.mainNow === 0 || queryString.mainMax === 0 || queryString.subNow === 0 || queryString.subMax === 0){
                 alert("🙅‍♂️코어 레벨을 입력해주세요.🙅‍♂️");
                 return 0;
             }

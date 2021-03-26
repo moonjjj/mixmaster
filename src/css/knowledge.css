@@ -48,4 +48,115 @@ a{
     font-weight: 700;
     letter-spacing: -1px;
     display:block;
+    margin-bottom:30px;
+}
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+
+}
+.card-section{
+    width:40%;
+    height:500px;
+    background-color:#fff;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+    margin:30px 5%;
+}
+.card-title{
+    font-size:20px;
+    font-weight:700;
+    margin:20px 10px;
+}
+.card-content{
+    height:inherit;
+    background-color: aliceblue;
+    margin:10px 10px;
+    padding:10px;
+    border-radius: 5px;
+    position:relative;
+}
+
+/* 아킬레스! */
+.core-img{width:50px;height:60px;position:absolute;}
+.arr{position:absolute;}
+.img1{left:5%;top:5%;}
+.img2{left:42%;top:5%;width:70px;}
+.img3{left:80%;top:5%;}
+.img4{top:40%;left:80%;}
+.img5{top:80%;left:80%;}
+.img6{top:80%;left:42%;}
+.img7{top:80%;left:5%;}
+.img8{top:40%;left:5%;}
+.arrow1{top:7%;left:24%;}
+.arrow2{top:7%;left:62%;}
+.arrow3{top:23%;left:80%;}
+.arrow4{top:63%;left:80%;}
+.arrow5{top:83%;left:61%;}
+.arrow6{top:83%;left:24%;}
+.arrow7{top:23%;left:5%;}
+.arrow8{top:62%;left:5%;}
+.achilles{
+    position:absolute;
+    width:15vw;
+    height:200px;
+    background-color:#3ab0e7;
+    opacity: 0.7;
+    padding:20px 10px;
+    top:21%;
+    left:22%;
+    font-size:20px;
+    color:#fff;
+    letter-spacing: -1px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+/* 믹스포인트 테이블 */
+.mix-table{
+    margin-top:10px;
+    width:100%;
+    font-size:20px;
+    text-align:center;
+}
+.mix-table tr td{
+    border:0.3px solid #d2d2d2;
+    border-collapse: collapse;
+}
+.mix-table tr:nth-child(2n){
+    background-color:#e7f2f8;
+}
+.mix-table tr:first-child{
+    background-color:#3ab0e7;
+    color:#fff;
+    height:40px;
+}
+.mix-table tr td:first-child::first-letter{
+    font-weight:700;
+    font-size:18px;
+}
+.mix-table tr td:first-child{
+    text-align:left;
+}
+.mix-table tr:hover, .mix-table tr:active{
+    background-color:#3ab0e7;
+    color:#fff;
+}
+
+/* 사냥터 추천 */
+.hunt-info{
+    font-size:0.6em;
+    color:rgba(46, 46, 46, 0.633);
+
+}
+.hunt-container{
+    overflow-y: scroll;
+    padding:30px 10px;
+}
+.hunt1 span{
+    font-size:2em;
+
 }
