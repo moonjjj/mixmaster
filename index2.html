@@ -145,12 +145,12 @@
                         <div class="mix-money-cal">
                             <p>믹돈계산기</p>
                             <div class="mixmoney">
-                                <input type="text" placeholder="ex)50" class="mix-money">억(GP)을 현금으로 바꾸면?
-                                <input type="submit" value="go" onclick="mixMoney();">
+                                <input type="text" placeholder="ex) 50" class="mix-money">억(GP)을 현금으로 바꾸면?
+                                <input type="button" value="go" onclick="mixMoney();">
                             </div>
                             <div class="moneymix">
-                                <input type="text" placeholder="ex)50000" class="money-mix">원(현금)을 믹돈으로 바꾸면?
-                                <input type="submit" value="go" onclick="moneyMix();">
+                                <input type="text" placeholder="ex) 50000" class="money-mix">원(현금)을 믹돈으로 바꾸면?
+                                <input type="button" value="go" onclick="moneyMix();">
                             </div>
                             <div class="result-box"></div>
                         </div>
@@ -173,7 +173,19 @@
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script>
-        
+        function mixMoney(){
+            var money = $('.mix-money').val();
+            console.log(money);
+
+            if(isNaN(money)){
+                alert("숫자를 입력해주세요.");
+                return 0;
+            }
+        }
+        function moneyMix(){
+            var money = $('.money-mix').val();
+            console.log(money);
+        }
     </script>
 </body>
 </html>
