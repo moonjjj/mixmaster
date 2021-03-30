@@ -1,0 +1,22 @@
+{
+  "name": "mixmaster",
+  "version": "1.0.0",
+  "description": "✔ 만들게 된 이유 & 페이지의 목표",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonjjj/mixmaster.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moonjjj/mixmaster/issues"
+  },
+  "homepage": "https://github.com/moonjjj/mixmaster#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
