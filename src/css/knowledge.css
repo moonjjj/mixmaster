@@ -222,6 +222,9 @@ a.button:hover {
     height:40px;
     font-size:18px;
 }
+.mobileui{
+    display:none;
+}
 .mixmoney, .moneymix{
     font-size:16px;
     padding-bottom:20px;
@@ -278,7 +281,7 @@ a.button:hover {
         align-items: center;
     }
 }
-@media (max-width:320px){
+@media (max-width:430px){
     .header-logo{
         width:50px;
         height:50px;
@@ -304,7 +307,19 @@ a.button:hover {
         padding-bottom: 20px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: baseline;
+        text-align: left;
+    }
+    .mixmoney input, .moneymix input{
+        width:80%;
+    }
+    .mixmoney a, .moneymix a{
+        margin:0 auto;
+    }
+    .mobileui{
+        display: block;
+        color:#6d6d6d;
+        font-size:13px;
     }
     .core-img{
         width:50px;

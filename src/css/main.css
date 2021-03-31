@@ -198,7 +198,7 @@ a{
         min-width:500px;
     }
 }
-@media (max-width:350px){
+@media (max-width:430px){
     .header-section{
         min-width:320px;
         height:50px;
