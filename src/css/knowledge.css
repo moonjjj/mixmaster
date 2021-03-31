@@ -278,7 +278,7 @@ a.button:hover {
         align-items: center;
     }
 }
-@media (max-width:330px){
+@media (max-width:320px){
     .header-logo{
         width:50px;
         height:50px;
