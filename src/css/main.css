@@ -199,6 +199,9 @@ a{
     }
 }
 @media (max-width:430px){
+    body{
+        background-position:7% 18%;
+    }
     .header-section{
         min-width:320px;
         height:50px;
@@ -247,5 +250,42 @@ a{
 
     .mix-iframe{
         min-width:320px;
+    }
+
+
+    .success-img {
+        position: absolute;
+        top: 56.5%;
+        left: 44%;
+        width: 35px;
+        height: 35px;
+    }
+    .info-container {
+        top: 72.8%;
+        left: 10%;
+        width: 70%;
+    }
+    .info-container span{
+        font-size:10px !important;
+    }
+    #success-lvl {
+        width: 118px;
+        height: 30px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .success-lvl {
+        position: absolute;
+        top: 66%;
+        left: 6.5%;
+        background-color: rgba(47,138,231, 0.3);
+        width: 80%;
+        height: 35px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.7;
+        color: #fff;
+        letter-spacing: 2px;
     }
 }
