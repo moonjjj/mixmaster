@@ -78,7 +78,8 @@ a{
     position: absolute;
     display: flex;
     top: 50%;
-    left: 4.5%;
+    left: 11%;
+    width:90%;
 }
 .info-container{
     position: absolute;
@@ -96,9 +97,10 @@ a{
     margin: 5px 10px;
     padding: 9px;
     border-radius: 10px;
+    width:80%;
 }
 .main-core{
-    width: 40%;
+    width: 37%;
     margin-right: 3%;
     background-color: rgba(47,138,231, 0.3);
     color:#fff;
@@ -113,7 +115,7 @@ a{
 }
 .sub-core{
     color:#fff;
-    width: 40%;
+    width: 37%;
     margin-right: 3%;
     background-color: rgba(47,138,231, 0.3);
     height: 100px;
@@ -184,3 +186,20 @@ a{
     right: 26%;
     cursor: pointer;
 }
+
+@media (max-width:449px){
+    .header-section{
+        min-width:500px;
+    }
+    .mix-iframe{
+        min-width:500px;
+    }
+}
+/* @media (max-width:380px){
+    .header-section{
+        min-width:300px;
+    }
+    .mix-iframe{
+        min-width:300px;
+    }
+} */
