@@ -30,7 +30,7 @@ a{
     box-shadow: 0 0 15px black;
 }
 .header-logo{
-    width:70px;
+    width:160px;
     height:70px;
 }
 .inner{
@@ -102,6 +102,7 @@ figure.snip1200 {
     min-width: 220px;
     max-width: 310px;
     max-height: 310px;
+    min-height:300px;
     width: 100%;
     background: #000000;
     color: #ffffff;
@@ -248,7 +249,7 @@ figure.snip1200 {
 
   @media (max-width:430px){
     .header-logo{
-      width:50px;
+      width:105px;
       height:50px;
   }
     .header-section{

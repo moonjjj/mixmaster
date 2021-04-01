@@ -30,7 +30,7 @@ a{
     box-shadow: 0 0 15px black;
 }
 .header-logo{
-    width:70px;
+    width:160px;
     height:70px;
 }
 .inner{
@@ -219,7 +219,7 @@ a{
         width:320px;
     }
     .header-logo{
-        width:50px;
+        width:105px;
         height:50px;
     }
     .mix-title{
