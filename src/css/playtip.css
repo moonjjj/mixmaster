@@ -111,6 +111,9 @@ figure.snip1200 {
     font-size: 16px;
     margin:10px auto;
   }
+  .snip1200 img{
+    height:100%;
+  }
   figure.snip1200 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -262,5 +265,7 @@ figure.snip1200 {
     .inner{
       width:320px;
     }
-
+    figure.snip1200 {
+      min-height:250px;
+    }
   }

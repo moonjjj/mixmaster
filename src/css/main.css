@@ -278,7 +278,7 @@ a{
         font-size:10px !important;
     }
     #success-lvl {
-        width: 168px;
+        width: 113px;
         height: 30px;
         text-align: center;
         font-size: 30px;
@@ -289,7 +289,7 @@ a{
         top: 66%;
         left: 6.5%;
         background-color: rgba(47,138,231, 0.3);
-        width: 70%;
+        width: 90%;
         height: 35px;
         font-weight: 700;
         font-size: 20px;
