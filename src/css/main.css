@@ -1,9 +1,18 @@
+@font-face{
+    font-family: 'nanum';
+    src:url(../font/NanumBarunGothic.ttf);
+}
+@font-face{
+    font-family: 'nanumBold';
+    src:url(../font/NanumBarunGothicBold.ttf);
+}
 body{
     margin: 0;
     padding: 0;
     background-image: url(../img/background-peng.png);
     background-position: 0% 18%;
     background-repeat: no-repeat;
+    font-family: 'nanum';
 }
 a{
     text-decoration: none;
@@ -155,7 +164,7 @@ a{
     top: 68%;
     left: 8.5%;
     background-color: rgba(47,138,231, 0.3);
-    width: 66%;
+    width: 76%;
     height: 37px;
     font-weight: 700;
     font-size: 25px;
@@ -175,7 +184,7 @@ a{
     width:100%;
 }
 #success-lvl {
-    width: 200px;
+    width: 190px;
     height: 35px;
     text-align: center;
     font-size: 35px;
@@ -269,7 +278,7 @@ a{
         font-size:10px !important;
     }
     #success-lvl {
-        width: 118px;
+        width: 168px;
         height: 30px;
         text-align: center;
         font-size: 30px;
@@ -280,7 +289,7 @@ a{
         top: 66%;
         left: 6.5%;
         background-color: rgba(47,138,231, 0.3);
-        width: 80%;
+        width: 70%;
         height: 35px;
         font-weight: 700;
         font-size: 20px;

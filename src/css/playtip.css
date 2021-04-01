@@ -1,9 +1,18 @@
+@font-face{
+  font-family: 'nanum';
+  src:url(../font/NanumBarunGothic.ttf);
+}
+@font-face{
+  font-family: 'nanumBold';
+  src:url(../font/NanumBarunGothicBold.ttf);
+}
 body{
     margin: 0;
     padding: 0;
     background-image: url(../img/background-peng.png);
     background-position: 0% 18%;
     background-repeat: no-repeat;
+    font-family: 'nanum';
 }
 a{
     text-decoration: none;
