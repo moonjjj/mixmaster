@@ -308,6 +308,9 @@ a.button:hover {
         width:105px;
         height:50px;
     }
+    .title1{
+        margin-bottom: 0px;
+    }
     .card-container {
         width: inherit;
     }
