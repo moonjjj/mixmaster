@@ -119,6 +119,7 @@ figure.snip1200 {
     box-sizing: border-box;
     -webkit-transition: all 0.45s ease-in-out;
     transition: all 0.45s ease-in-out;
+    
   }
   figure.snip1200 img {
     max-width: 100%;
